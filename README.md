@@ -1,5 +1,5 @@
 
-### 1️⃣ EZRA SILVESTRECE – Database & Models
+### 1️⃣ GLYFA MAE PAGLINAWAN – Database & Models
 **Tasks:**
 - Set up the **MongoDB database** 
 - Create **Mongoose schemas** 
@@ -14,7 +14,7 @@ Ezra focuses on **database structure** to prevent conflicts and ensure consisten
 
 ---
 
-### 2️⃣ GLYFA MAE PAGLINAWAN – Controllers & CRUD Logic
+### 2️⃣ EZRA SILVESTRECE – Controllers & CRUD Logic
 **Tasks:**
 - Create **controller functions**: `getAllSupplies`, `createSupply`, `updateSupply`, `deleteSupply`
 - Use **async/await** for database operations
