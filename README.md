@@ -10,7 +10,7 @@
   
 
 **Purpose:**  
-Ezra focuses on **database structure** to prevent conflicts and ensure consistency.
+Glyfa focuses on **database structure** to prevent conflicts and ensure consistency.
 
 ---
 
@@ -23,7 +23,7 @@ Ezra focuses on **database structure** to prevent conflicts and ensure consisten
   `controllers/classroomsuppliesControllers.js`
 
 **Purpose:**  
-Glyfa focuses on **API logic and behavior**, making sure operations on the database are correct.
+Ezra focuses on **API logic and behavior**, making sure operations on the database are correct.
 
 ---
 
