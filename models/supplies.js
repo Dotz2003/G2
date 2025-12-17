@@ -8,11 +8,7 @@ const supplySchema = new mongoose.Schema(
       type: String,
       required: [true, "Supply name is required"],
       trim: true,
-    },
-    category: {
-      type: String,
-      required: [true, "Category is required"],
-      trim: true,
+    
     },
     quantity: {
       type: Number,
@@ -24,11 +20,7 @@ const supplySchema = new mongoose.Schema(
       required: [true, "Unit is required"],
       trim: true,
     },
-    condition: {
-      type: String,
-      default: "good",
-      trim: true,
-    },
+    
   },
   {
     timestamps: true, // adds createdAt and updatedAt
@@ -39,4 +31,3 @@ const supplySchema = new mongoose.Schema(
 const Supply = mongoose.model('Supply', supplySchema);
 
 export default Supply;
-  

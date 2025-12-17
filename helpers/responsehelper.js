@@ -31,4 +31,4 @@ export const errorResponse = (res, statusCode = 500, message, error = null) => {
   }
   // pag return han response ha client
   return res.status(statusCode).json(response);
-};
+};  

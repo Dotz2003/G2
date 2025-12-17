@@ -1,7 +1,7 @@
 // server.js
 import express from 'express';
 import dotenv from 'dotenv';
-import supplyRoutes from './routes/supplyRoutes.js';
+import supplyRoutes from './routes/classroomsuppliesRoutes.js';
 import connectDB from './config/database.js';
 
 dotenv.config();
@@ -29,3 +29,4 @@ app.listen(PORT, () => {
 
 });
                 
+
