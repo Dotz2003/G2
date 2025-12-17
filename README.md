@@ -14,7 +14,7 @@ Ezra focuses on **database structure** to prevent conflicts and ensure consisten
 
 ---
 
-### 2️⃣ GLYFA MAE PAGLINAWAN – Controllers & Business Logic
+### 2️⃣ GLYFA MAE PAGLINAWAN – Controllers & CRUD Logic
 **Tasks:**
 - Create **controller functions**: `getAllSupplies`, `createSupply`, `updateSupply`, `deleteSupply`
 - Use **async/await** for database operations
