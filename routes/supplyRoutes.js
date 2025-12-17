@@ -1,14 +1,19 @@
-const express = require('express');
+// routes/supplyRoutes.js
 import express from 'express';
-import * as controller from '../controllers/supplyController.js';
+import {
+  getAllSupplies,
+  createSupply,
+  updateSupply,
+  deleteSupply,
+} from '../controllers/supplyController.js';
 
 const router = express.Router();
-const controller = require('../controllers/supplyController');
 
-router.get('/', controller.getAllSupplies);
-router.post('/', controller.createSupply);
-router.put('/:id', controller.updateSupply);
-router.delete('/', controller.deleteSupply);
+// Supply routes
+router.get('/', getAllSupplies);
+router.post('/', createSupply);
+router.put('/:id', updateSupply);
+// Use query parameter or body for delete; here assuming query parameter "id"
+router.delete('/', deleteSupply);
 
-module.exports = router;
 export default router;

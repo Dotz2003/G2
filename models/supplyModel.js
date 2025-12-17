@@ -1,32 +1,42 @@
-const mongoose = require('mongoose');
 // models/supplyModel.js
 import mongoose from 'mongoose';
 
-const supplySchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true
+// Define the Supply schema
+const supplySchema = new mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: [true, "Supply name is required"],
+      trim: true,
+    },
+    category: {
+      type: String,
+      required: [true, "Category is required"],
+      trim: true,
+    },
+    quantity: {
+      type: Number,
+      required: [true, "Quantity is required"],
+      min: [0, "Quantity cannot be negative"],
+    },
+    unit: {
+      type: String,
+      required: [true, "Unit is required"],
+      trim: true,
+    },
+    condition: {
+      type: String,
+      default: "good",
+      trim: true,
+    },
   },
-  category: {
-    type: String,
-    required: true
-  },
-  quantity: {
-    type: Number,
-    required: true,
-    min: 0
-  },
-  unit: {
-    type: String,
-    required: true
-  },
-  condition: {
-    type: String,
-    default: "good"
+  {
+    timestamps: true, // adds createdAt and updatedAt
   }
-}, { timestamps: true });
+);
 
-module.exports = mongoose.model('Supply', supplySchema);
+// Create the Supply model
 const Supply = mongoose.model('Supply', supplySchema);
 
 export default Supply;
+  
